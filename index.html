@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
     <header>
         <div class="container">
@@ -49,8 +49,10 @@
                         </form>
                     </div>
                     <div class="theme-switch">
-                        <i class="far fa-moon dark-theme"></i>
-                        <i class="lar la-sun light-theme"></i>
+                        <button id="switchButton" title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="lar la-sun"></i>
+                        </button>
                     </div>
 
                     <label for="nav-mobile-input" class="mobile-nav-button">
@@ -119,41 +121,42 @@
 
     <!-- DEALS -->
     <section class="deals">
-        <!-- <div class="container"> -->
-        <div class="deals__content">
-            <div class="row">
-                <div class="col deals__left"></div>
-                <div class="col deals__right px-lg-4 py-lg-3 py-4">
-                    <div class="deals__right-content p-md-5 p-3">
-                        <div class="title">
-                            <h6>More than 3000 Restaurants</h6>
-                            <h3>Book a table easily at the best price</h3>
-                        </div>
-                        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.
-                            Integer sit amet
-                            mattis
-                            quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
-                        <div class="subscribe-cat mt-5">
-                            <div class="subscribe-cat-gd">
-                                <div class="icon mb-4">
-                                    <i class="fas fa-thumbs-up"></i>
-                                </div>
-                                <a href="#" class="subscribe-cat-link">Best Deals</a>
-                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+        <div class="container-fluid px-lg-0">
+            <div class="deals__content">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5 deals__left">
+                        <div class="deals__left-img"></div>
+                    </div>
+                    <div class="col-lg-6 px-lg-4 py-lg-3 py-4 deals__right">
+                        <div class="deals__right-content p-md-5 p-3">
+                            <div class="title">
+                                <h6>More than 3000 Restaurants</h6>
+                                <h3>Book a table easily at the best price</h3>
                             </div>
-                            <div class="subscribe-cat-gd">
-                                <div class="icon mb-4">
-                                    <i class="fas fa-utensils"></i>
+                            <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.
+                                Integer sit amet mattis quam. Vivamus a ligula quam tesque et libero ut justo ultrices
+                                in.</p>
+                            <div class="subscribe-cat mt-5">
+                                <div class="subscribe-cat-gd">
+                                    <div class="icon mb-4">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                    <a href="#" class="subscribe-cat-link">Best Deals</a>
+                                    <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                                 </div>
-                                <a href="#" class="subscribe-cat-link">Best Food</a>
-                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                <div class="subscribe-cat-gd">
+                                    <div class="icon mb-4">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <a href="#" class="subscribe-cat-link">Best Food</a>
+                                    <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </section>
 
     <!-- CATEGORIES -->
@@ -268,35 +271,43 @@
     <!-- STATS -->
     <section class="stats">
         <div class="container">
-            <div class="stats__content">
-                <div class="stats__item">
-                    <i class="far fa-building"></i>
-                    <div class="num-counter">
-                        <span class="counter" data-counter-time="2000" data-counter-delay="10" data-counter-time="2000"
-                            data-counter-delay="10">15,100</span>
+            <div class="row stats__content">
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="stats__item">
+                        <i class="far fa-building"></i>
+                        <div class="num-counter">
+                            <span class="counter" data-counter-time="2000" data-counter-delay="10"
+                                data-counter-time="2000" data-counter-delay="10">15,100</span>
+                        </div>
+                        <p>Branches</p>
                     </div>
-                    <p>Branches</p>
                 </div>
-                <div class="stats__item">
-                    <i class="fas fa-utensils"></i>
-                    <div class="num-counter">
-                        <span class="counter" data-counter-time="2000" data-counter-delay="10">19,256</span>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="stats__item">
+                        <i class="fas fa-utensils"></i>
+                        <div class="num-counter">
+                            <span class="counter" data-counter-time="2000" data-counter-delay="10">19,256</span>
+                        </div>
+                        <p>Food Items</p>
                     </div>
-                    <p>Food Items</p>
                 </div>
-                <div class="stats__item">
-                    <i class="fas fa-users"></i>
-                    <div class="num-counter">
-                        <span class="counter" data-counter-time="2000" data-counter-delay="10">12,100</span>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="stats__item">
+                        <i class="fas fa-users"></i>
+                        <div class="num-counter">
+                            <span class="counter" data-counter-time="2000" data-counter-delay="10">12,100</span>
+                        </div>
+                        <p>Chefs</p>
                     </div>
-                    <p>Chefs</p>
                 </div>
-                <div class="stats__item">
-                    <i class="las la-smile" style="font-size: 32px;"></i>
-                    <div class="num-counter">
-                        <span class="counter" data-counter-time="2000" data-counter-delay="10">2,560</span>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="stats__item">
+                        <i class="las la-smile" style="font-size: 32px;"></i>
+                        <div class="num-counter">
+                            <span class="counter" data-counter-time="2000" data-counter-delay="10">2,560</span>
+                        </div>
+                        <p>Happy Customers</p>
                     </div>
-                    <p>Happy Customers</p>
                 </div>
             </div>
         </div>
@@ -329,13 +340,13 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-5">
+    <footer class="footer py-5">
         <div class="container py-lg-4">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-sm-7 pr-lg-5">
                     <div class="footer-logo mb-3">
                         <h2>
-                            <a href="#" class="navbar-brand">Diner</a>
+                            <a href="./index.html" class="navbar-brand">Diner</a>
                         </h2>
                     </div>
                     <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
@@ -355,7 +366,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
                     <ul>
                         <h6 class="footer-title">Usefull Links</h6>
                         <li>
@@ -375,7 +386,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5">
                     <ul>
                         <h6 class="footer-title">More Info</h6>
                         <li>
@@ -395,19 +406,45 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5">
                     <h6 class="footer-title">
                         Subscribe to our Newsletter
                     </h6>
                     <p>Enter your email and receive the latest news, updates and special offers from us.</p>
                     <form action="#" class="subscribe mt-4" method="post">
                         <input type="email" name="email" placeholder="Your Email Address" class="w-100" required>
-                        <button class="btn w-100 mt-3">Subscribe Now</button>
+                        <button class="btn btn-solid mt-3">Subscribe Now</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- COPYRIGHTS -->
+    <section class="rights">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>
+                        © 2021 Diner. All rights reserved. Design by <a href="#">W3Layouts</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 rights__list">
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -437,6 +474,8 @@
             midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
         });
     </script>
+    <!-- Main js -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
