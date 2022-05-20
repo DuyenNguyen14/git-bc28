@@ -38,10 +38,47 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
+@media (max-width: 600px) {
+    p {
+        font-size: 16px !important;
+        line-height: 26px;
+    }
+}
+
 .container {
     max-width: 1199px;
     margin: auto;
     padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
 }
 
 .title h6 {
@@ -60,6 +97,17 @@ p {
     font-weight: 600;
     line-height: 40px;
     font-size: 38px;
+}
+
+@media (max-width: 600px) {
+    .title h6 {
+        font-size: 16px;
+    }
+
+    .title h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
 }
 
 .btn {
@@ -94,6 +142,12 @@ p {
 .btn-solid:hover {
     opacity: 0.8;
     color: #fff;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px 21px;
+    }
 }
 
 /* HEADER */
@@ -156,10 +210,6 @@ header {
     cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
-}
-
-.dark-theme {
-    position: absolute;
 }
 
 .mobile-nav-button {
@@ -238,6 +288,7 @@ header {
 #switchButton .fa-moon {
     display: block;
 }
+/* Light theme */
 
 /* Dark theme */
 .dark#myBody {
@@ -263,6 +314,13 @@ header {
 
 .dark .header__search-bar button i {
     color: #c2d0da;
+}
+/* Dark theme */
+
+@media (max-width: 600px) {
+    .header__search-bar {
+        display: none;
+    }
 }
 
 /* HEADER */
@@ -302,6 +360,50 @@ header {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 60px;
+}
+
+@media (max-width: 480px) {
+    .top-banner {
+        min-height: 450px;
+    }
+
+    .top-banner__content {
+        padding-top: 140px;
+    }
+
+    .top-banner__text {
+        max-width: 500px;
+    }
+
+    .top-banner__content .top-banner__text h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .top-banner__text p {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .top-banner__content .top-banner__text h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-banner__text h3 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .top-banner__text h3 {
+        font-size: 48px;
+        line-height: 58px;
+    }
 }
 
 /* TOP BANNER */
@@ -391,6 +493,32 @@ header {
 .dark .subscribe-cat-link {
     color: #eee;
 }
+/* Dark theme */
+
+@media (max-width: 480px) {
+    .title h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .deals__left {
+        padding: 0;
+    }
+
+    .deals__left-img {
+        min-height: 200px;
+    }
+
+    .subscribe-cat {
+        gap: 10px;
+    }
+
+    .subscribe-cat .subscribe-cat-link {
+        font-size: 18px;
+    }
+}
 
 /* DEALS */
 
@@ -437,7 +565,6 @@ header {
     position: absolute;
     bottom: 25px;
     left: 65px;
-    font-family: 'Quicksand', sans-serif !important;
 }
 
 .categories__text a h4 {
@@ -445,6 +572,7 @@ header {
     font-size: 22px;
     line-height: 30px;
     font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .categories__text h6 {
@@ -457,6 +585,31 @@ header {
 /* Dark theme */
 .dark .categories {
     background-color: #282828;
+}
+/* Dark theme */
+
+@media (max-width: 767.98px) {
+    .categories__text {
+        left: 45px;
+        bottom: 10px; 
+    }
+}
+
+@media (max-width: 800px) {
+    .categories__text a h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .categories__text h6 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .categories__item {
+        margin-top: 15px;
+    }
 }
 
 /* CATEGORIES */
@@ -506,6 +659,37 @@ header {
 
 .middle-banner__btn .btn-outline-light {
     margin-right: 24px;
+}
+
+@media (max-width: 576px) {
+    .middle-banner__btn .btn {
+        margin-top: 20px;
+    }
+
+    .middle-banner__btn .btn-outline-light {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 736px) {
+    .middle-banner__content h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .middle-banner__content h3 {
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 736px) {
+    .middle-banner__content h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
 }
 
 /* STATS */
@@ -565,6 +749,23 @@ header {
 
 .dark .stats__item p {
     color: #c2d0da;
+}
+/* Dark theme */
+
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 640px) {
+    .stats__item .num-counter span {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .stats {
+        margin-top: 0;
+    }
 }
 
 /* STATS */
@@ -733,6 +934,13 @@ h6.footer-title {
     background: #ff6600;
 }
 
+@media (max-width: 992px) {
+    h6.footer-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
 /* FOOTER */
 
 /* COPYRIGHTS */
@@ -779,184 +987,5 @@ h6.footer-title {
 
     100% {
         box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
-    }
-}
-
-/* Responsive */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-
-    .title h6 {
-        font-size: 16px;
-    }
-
-    .title h3 {
-        font-size: 30px;
-    }
-
-    /* HEADER */
-    .header__search-bar {
-        display: none;
-    }
-
-    /* HEADER */
-
-    /* TOP BANNER */
-    .top-banner__text h3 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    /* TOP BANNER */
-
-    /* DEALS */
-    .deals__left-img {
-        min-height: 200px;
-    }
-
-    .deals__right p {
-        font-size: 16px;
-    }
-
-    .subscribe-cat {
-        grid-gap: 20px 10px;
-    }
-
-    .subscribe-cat-link {
-        font-size: 18px;
-    }
-
-    /* DEALS */
-
-    /* CATEGORIES */
-    .categories__text {
-        left: 40px;
-        bottom: 10px;
-    }
-
-    .categories__text a h4 {
-        font-size: 18px;
-        line-height: 28px;
-        font-family: 'Quicksand', sans-serif;
-    }
-
-    .categories__text h6 {
-        font-size: 16px;
-    }
-
-    /* CATEGORIES */
-
-    /* STATS */
-    .stats {
-        margin-top: 30px;
-    }
-
-    /* STATS */
-
-    /* FOOTER */
-    h6.footer-title {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* FOOTER */
-
-    /* RIGHTS */
-    .rights p {
-        text-align: center;
-    }
-
-    /* RIGHTS */
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .title h6 {
-        font-size: 20px;
-    }
-
-    .title h3 {
-        font-size: 32px;
-    }
-
-    /* HEADER */
-    .header__search-bar {
-        display: block;
-    }
-
-    /* HEADER */
-
-    /* DEALS */
-    .deals__right p {
-        font-size: 18px;
-    }
-
-    /* DEALS */
-
-    /* CATEGORIES */
-    .categories__text {
-        bottom: 25px;
-        left: 65px;
-    }
-
-    /* CATEGORIES */
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-
-    /* TOP BANNER */
-    .top-banner__text h3 {
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    /* TOP BANNER */
-
-    /* CATEGORIES */
-    .categories__text a h4 {
-        font-size: 22px;
-    }
-
-    .categories__text h6 {
-        font-size: 18px;
-    }
-
-    /* CATEGORIES */
-
-    /* STATS */
-    .stats {
-        margin-top: -70px;
-    }
-
-    /* STATS */
-}
-
-/*  */
-@media (min-width: 1190px) {
-    /* TOP BANNER */
-    .top-banner__text h3 {
-        font-size: 48px;
-        line-height: 58px;
-    }
-    /* TOP BANNER */
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-        margin: 0 auto;
     }
 }
