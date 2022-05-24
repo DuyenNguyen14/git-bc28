@@ -1088,15 +1088,36 @@ span.video-play-icon:hover {
     font-weight: 400;
     margin-top: 4px;
 }
-.slick-dots{
-    margin-top: 10px;
-    bottom: -50px;
-}
 
+.slick-dots {
+    text-align: center;
+    margin-top: 10px;
+}
 .slick-active button{
     background: #ff6600;
 }
-
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
 .slick-dots li button:hover{
    background: #ff6600;
 }
