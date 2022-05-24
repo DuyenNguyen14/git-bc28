@@ -1018,10 +1018,6 @@ span.video-play-icon:hover {
 /* BLOG POSTS */
 
 /* TESTIMONIALS */
-.container {
-    max-width: 1200px;
-}
-
 .stage-outer {
     position: relative;
     overflow: hidden;
@@ -1044,12 +1040,8 @@ span.video-play-icon:hover {
     margin-bottom: 20px
 }
 
-.mb-5 {
-    margin-bottom: 48px;
-}
-
 .testimonial blockquote {
-    margin: 10px 150px 10px;
+    text-align: center;
 }
 
 .comment-p q {
@@ -1057,6 +1049,14 @@ span.video-play-icon:hover {
     line-height: 36px;
     color: black;
     font-weight: 600;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.comment-p q::before {
+    font-size: 50px;
+    display: block;
+    color: #ff6600;
 }
 
 .testimonial p {
@@ -1066,50 +1066,37 @@ span.video-play-icon:hover {
     line-height: 28px;
     color: gray;
     font-family: 'Quicksand', sans-serif;
-}
-
-.text-center {
     text-align: center;
-    margin-top: 20px;
 }
 
 .people-info {
     font-weight: 600;
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.people-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
 }
 
 .people-info p {
     margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 400;
+    margin-top: 4px;
 }
 .slick-dots{
-    text-align: center;
     margin-top: 10px;
+    bottom: -50px;
 }
+
 .slick-active button{
     background: #ff6600;
 }
-.slick-dots li{
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-}
-.slick-dots li button{
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 10px;
-    height: 10px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    border-radius: 10px;
-}
+
 .slick-dots li button:hover{
    background: #ff6600;
 }
