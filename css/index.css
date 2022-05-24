@@ -1015,6 +1015,105 @@ span.video-play-icon:hover {
 .read:hover {
     color: #ff6600;
 }
+/* BLOG POSTS */
+
+/* TESTIMONIALS */
+.container {
+    max-width: 1200px;
+}
+
+.stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.comment-img img {
+    left: 0px;
+    top: 0px;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.mb-5 {
+    margin-bottom: 48px;
+}
+
+.testimonial blockquote {
+    margin: 10px 150px 10px;
+}
+
+.comment-p q {
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    font-weight: 600;
+}
+
+.testimonial p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: gray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.people-info {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.people-info p {
+    margin-top: 10px;
+}
+.slick-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.slick-active button{
+    background: #ff6600;
+}
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+.slick-dots li button:hover{
+   background: #ff6600;
+}
+/* TESTIMOTINALS */
 
 /* FOOTER */
 .footer {

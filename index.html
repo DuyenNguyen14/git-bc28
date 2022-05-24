@@ -581,19 +581,17 @@
     <section class="clients agency-test" id="testimonials">
         <div class="midd-w3 py-5">
             <div class="container py-lg-5 py-md-3">
-                <div class="header-title text-center">
-                    <h6 class="title-subhny">Testimonials</h6>
-                    <h3 class="title mb-5">
-                        What People Say
-                    </h3>
+                <div class="title text-center">
+                    <h6>Testimonials</h6>
+                    <h3 class="mb-5">What People Say</h3>
                 </div>
                 <div class="your-class">
                     <div class="stage-outer">
                         <div class="item">
                             <div class="testimonial-content">
                                 <div class="testimonial">
-                                    <a class="comment-img" href="#url"><img src="./images/team3.jpg"
-                                            class="img-responsive" alt="placeholder image"></a>
+                                    <a class="comment-img" href="#"><img src="./img/team3.jpg" class="img-responsive"
+                                            alt="placeholder image"></a>
                                     <blockquote class="comment-p">
                                         <q>OMG! I cannot believe. It's Awesome</q>
                                     </blockquote>
@@ -614,8 +612,8 @@
                         <div class="item">
                             <div class="testimonial-content">
                                 <div class="testimonial">
-                                    <a class="comment-img" href="#url"><img src="./images/team2.jpg"
-                                            class="img-responsive" alt="placeholder image"></a>
+                                    <a class="comment-img" href="#"><img src="./img/team2.jpg" class="img-responsive"
+                                            alt="placeholder image"></a>
                                     <blockquote class="comment-p">
                                         <q>OMG! I cannot believe. It's Awesome</q>
                                     </blockquote>
@@ -636,8 +634,8 @@
                         <div class="item">
                             <div class="testimonial-content">
                                 <div class="testimonial">
-                                    <a class="comment-img" href="#url"><img src="./images/team1.jpg"
-                                            class="img-responsive" alt="placeholder image"></a>
+                                    <a class="comment-img" href="#"><img src="./img/team1.jpg" class="img-responsive"
+                                            alt="placeholder image"></a>
                                     <blockquote class="comment-p">
                                         <q>OMG! I cannot believe. It's Awesome </q>
                                     </blockquote>
@@ -658,8 +656,8 @@
                         <div class="item">
                             <div class="testimonial-content">
                                 <div class="testimonial">
-                                    <a class="comment-img" href="#url"><img src="./images/team3.jpg"
-                                            class="img-responsive" alt="placeholder image"></a>
+                                    <a class="comment-img" href="#"><img src="./img/team3.jpg" class="img-responsive"
+                                            alt="placeholder image"></a>
                                     <blockquote class="comment-p">
                                         <q>OMG! I cannot believe. It's Awesome</q>
                                     </blockquote>
@@ -819,6 +817,16 @@
         $('.popup-with-zoom-anim').magnificPopup({
             type: 'inline',
             midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+        // Slick slider
+        $(document).ready(function () {
+            $('.stage-outer').slick({
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+
+            });
         });
     </script>
     <!-- Main js -->
