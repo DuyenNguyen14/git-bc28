@@ -839,6 +839,10 @@
     <script src="./js/slick.min.js"></script>
 
     <script>
+        // Dark theme
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        }
         // Count up
         $('.counter').countUp();
         // Magnific Popup
@@ -857,8 +861,6 @@
             });
         });
     </script>
-    <!-- Main js -->
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
