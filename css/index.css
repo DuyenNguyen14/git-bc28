@@ -1257,7 +1257,7 @@ h6.footer-title {
     position: fixed;
     bottom: 55px;
     right: 20px;
-    z-index: 99;
+    z-index: 100;
     border: none;
     outline: none;
     background-color: #ff6600;
